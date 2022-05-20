@@ -13,7 +13,7 @@ import com.example.androidbasics.R
 class LifeCycleFirstActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Log.i("ActivityLifeCycle", "Activity First OnCreate before super")
+        Log.i("ActivityLifeCycle", "Activity First OnCreate")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_life_cycle_first)
 

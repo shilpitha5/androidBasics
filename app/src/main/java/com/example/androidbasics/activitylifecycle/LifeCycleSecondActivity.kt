@@ -14,8 +14,12 @@ class LifeCycleSecondActivity : AppCompatActivity() {
         setContentView(R.layout.activity_life_cycle_second)
 
         val textView=findViewById<TextView>(R.id.textView)
+        val textView2=findViewById<TextView>(R.id.textView2)
         textView.setOnClickListener {
             startActivity(Intent(this,TransparentActivity::class.java))
+        }
+        textView2.setOnClickListener {
+            finish()
         }
     }
 
@@ -48,4 +52,6 @@ class LifeCycleSecondActivity : AppCompatActivity() {
         Log.i("ActivityLifeCycle","Activity Second OnRestart")
         super.onRestart()
     }
+
+
 }
