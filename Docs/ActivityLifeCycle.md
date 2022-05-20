@@ -54,7 +54,15 @@ onDestroy()                     [no change]
 
 
 Uses:
-OnPause : The data needs to be saved in this state, since sometimes the proccess is killed by the system due to memory issue. onStop is not guaranted to call everytime.
+`OnPause` : The data needs to be saved in this state, since sometimes the proccess is killed by the system due to memory issue. onStop is not guaranted to call everytime.
+
+`onStart` : Good place to begin drawing visual elements, running animations, etc.
+`onStop` : Good place to stop refreshing UI, running animations and other visual things.
+`OnRestart` : For activities that are using raw Cursor objects (instead of creating them through managedQuery(android.net.Uri, java.lang.String[], java.lang.String, java.lang.String[], java.lang.String), this is usually the place where the cursor should be requeried (because you had deactivated it in onStop().
+`OnResume` : On platform versions prior to Build.VERSION_CODES.Q this is also a good place to try to open exclusive-access devices or to get access to singleton resources. Starting with Build.VERSION_CODES.Q there can be multiple resumed activities in the system simultaneously, so onTopResumedActivityChanged(boolean) should be used for that purpose instead.
+
+You should register and unregister your receivers `onStart() and onStop()`.
+
 
 
 In Depth
