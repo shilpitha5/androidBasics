@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidBasics">
         <activity
-            android:name=".activitylifecycle.TransparentActivity"
-            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"
+            android:name=".coroutinebasics.CoroutineFirstActivity"
             android:exported="false" />
+        <activity
+            android:name=".activitylifecycle.TransparentActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" />
         <activity
             android:name=".activitylifecycle.LifeCycleSecondActivity"
             android:exported="false" />
