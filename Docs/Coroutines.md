@@ -8,6 +8,7 @@ GlobalScope.launch{} - lifecycle of entire application
 runBlocking{} - run coroutine in blocking way
 coroutineScope.launch{} - does not complete until all children coroutine complete
 
+`runblocking` used for unit testing or to call other suspend functions
 
 `launch` is a coroutine builder. 
 It launches a new coroutine concurrently with the rest of the code, which continues to work independently. 
