@@ -1,5 +1,5 @@
-![rxjava-cheat-sheet.pdf](https://github.com/shilpitha5/androidBasics/files/8865636/rxjava-cheat-sheet.pdf)
 
+![rxjava-cheat-sheet](https://user-images.githubusercontent.com/94926624/172899445-440c54f4-3641-4e11-a24f-ba618469d989.jpg)
 
 
 **RxJava**<br/>
