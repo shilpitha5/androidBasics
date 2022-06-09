@@ -1,5 +1,8 @@
+![1*zTLNOiNabCI7VE4b12dfwg](https://user-images.githubusercontent.com/94926624/172740151-a07130cb-0473-4467-be19-c653ef9e9d9b.png)
+
 **Coroutines**
-Concurrency is vital in programming. Running different tasks on different threads. But sometimes, we as developers can get carried away and create too many Thread objects which would eventually consume a lot of memory and time. Thankfully, Kotlin has introduced Coroutines which are light-weight threads.
+Concurrency is vital in programming. Running different tasks on different threads. 
+But sometimes, we as developers can get carried away and create too many Thread objects which would eventually consume a lot of memory and time. Thankfully, Kotlin has introduced Coroutines which are light-weight threads.
 Here, Co means cooperation and Routines means functions.
 It means that when functions cooperate with each other, we call it as Coroutines.
 
