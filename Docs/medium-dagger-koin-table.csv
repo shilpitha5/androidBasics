@@ -1,0 +1,12 @@
+Category, Dagger 2, Koin
+Framework, Dependency Injection, Service Locator
+Under the hood, Annotation with code generation, Kotlin smart reified
+Kotlin friendliness, Not friendly using public lateinit var, Friently using private val
+Learning, Harder to learn, Simpler to learn
+Setup, Complex setup component-module-subcomponent, Simpler setup with module
+Configuration, More option of configuration, Limited option of configuration
+Compilation, Longer compile time, Faster compile time
+Error detection, During compile time, During run time that crash the app
+Scoping, Using annotation to define scope, Using single factory and scope object or name
+Multi-Module Support, Possible using component dependency, Possible using loadKoinModules
+ViewModel support, Need special factory injection, relatively simpler injection
