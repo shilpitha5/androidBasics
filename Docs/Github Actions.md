@@ -26,6 +26,25 @@ Common workflow \
 Commit -> Test -> Build -> push -> deploy
 
 
+# Workflow Template
+name - displays the name of workflow while executing \
+on - Name of the github event that triggers the work flow \
+jobs - It contains the sequence of actions(steps) that needs to be executed \
+step - run commands/ actions/ setup tasks \
+uses - selects as action and under action/... the reusable actions is hosted or existing action names can be written along with the version eg: Checkout@v2 \
+      eg: uses : setup - action/setup-java@v1 with version 1.8 then the java is installed there \
+run - run a command line command. eg: run : gradlew build
+
+
+
+
+
+
+
+
+
+
+
 
 
 
