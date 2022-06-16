@@ -8,7 +8,6 @@
 .cxx
 local.properties
 
-gradlew
 gradlew.bat
 
 # Ignore gradle files
