@@ -36,6 +36,9 @@ uses - selects as action and under action/... the reusable actions is hosted or 
 run - run a command line command. eg: run : gradlew build
 
 
+# secrets
+Present in github to store passwords and username so we can use their reference in yaml file. eg ${{Secrets.username}}
+
 
 
 
