@@ -37,4 +37,14 @@ View.setTag(Object) allows you to tell the View to hold an arbitrary object. If 
 
 
 
+## Explain the build process in Android.
+
+The build process in Android has three steps:
+
+The first step consists of the compilation of the resources folder using the `Android Asset Packaging Tool (AAPT)`. These are compiled into a single class file known as `R.java`, which only holds constants.
+
+In the second step, the java source code needs to be compiled to `.class` files using `javac`, which are then converted to `Dalvik bytecode` using the `‘dx’ tool`, which is one of the tools in the software development kit. The final output file is classes.ex.
+
+In the third and final step, the Android apk builder is required to take all the inputs and build the Android Packaging Key (APK) file.
+
 
