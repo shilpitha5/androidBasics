@@ -7,6 +7,8 @@ RxJava is an implementation of the reactive extensions, a library for composing 
 As such, RxJava offers the implementations of the abstractions to create streams of events and items that you can subscribe to, in your code and react to the data flowing through those streams.
 <br/>
 
+RxJava has 3 major components: Observables, Observers and Operators
+
 **Basic RxJava Classes**
 <br/>`Observable` - emits 0 or n items of T and terminates with complete or an error.
 <br/>`Flowable` - It acts as an Observable, and emits 0 or n items. It terminates with complete or an error. But it also supports **back pressure**, which lets you control how fast the source emits items. It's really handy when you're building complex systems, since a fast producer of data cannot flood the system with items waiting to be processed.
@@ -14,8 +16,15 @@ As such, RxJava offers the implementations of the abstractions to create streams
 <br/>`Maybe`. - succeeds with either an item, no item, or errors. 
 <br/>`Completable` - either completes or returns an error. It never return items. 
 <br/>These are responsible for creating the streams and producing the data.
-<br/>On the other side, data is processed via Observers. We'll talk about them in a moment.
+<br/>On the other side, data is processed via Observers. In simple words, observers are the objects that listens to the data.
 <br/>
+
+### How do Observable works?
+An Observable works through its onNext(), onCompleted(), and onError() calls.
+At the highest level, an Observable works by passing three types of events:
+- onNext(T):- used to emit item(of type T) one at a time all the way down to the observer
+- onComplete():- communicates that all data has been emitted or indicates that no item will be emitted after this call.
+- onError():- communicates an error
 
 **Observables in RxJava**
 <br/>Observable.just("RebelLabs");
@@ -93,3 +102,4 @@ assertThat(ts.values()).hasSize(5);
 
 Reference Link:
 https://www.jrebel.com/blog/rxjava-cheat-sheet
+https://0202gaurav.medium.com/observable-vs-observer-rxjava-8739b7612a54
