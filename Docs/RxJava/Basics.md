@@ -1,8 +1,6 @@
 ## RxJava:
-RxJava is a JVM library that uses observable sequences to perform asynchronous and event-based programming. 
-
-Its primary building blocks are triple O’s, which stand for Operator, Observer, and Observables. 
-
+RxJava is a JVM library that uses observable sequences to perform asynchronous and event-based programming. <br/>
+Its primary building blocks are triple O’s, which stand for Operator, Observer, and Observables. <br/>
 And we use them to complete asynchronous tasks in our project. It greatly simplifies multithreading in our project. It assists us in determining which thread we want to run the task on. </br>
 
 In simple words:
@@ -123,6 +121,11 @@ observable.subscribe{ s ->
 }
 ```
 Here we are implementing only onNext .
+
+### RxAndroid
+RxAndroid is a RxJava for Android extension that is only used in Android applications. RxAndroid added the Android-required Main Thread. We will need the Looper and Handler for Main Thread execution in order to work with multithreading in Android.  AndroidSchedulers are provided by RxAndroid.<br/>
+
+mainThread() returns a scheduler, which aids in performing tasks on the main UI thread, which is primarily used in the Android project. So, here we have AndroidSchedulers. mainThread() is used to gain access to the application’s main thread so that we can perform actions such as updating the UI. Because updating the UI from the background thread is technically not possible in Android, we can use AndroidSchedulers.mainThread() to update anything on the main thread. Internally, it makes use of the Handler and Looper concepts to perform the action on the main thread.
 
 
 References:
